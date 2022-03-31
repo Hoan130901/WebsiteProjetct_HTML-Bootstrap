@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Jquery library needs to be placed above any reference to Boostrap js -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <title>ThatCarShop</title>
+    <!-- Main CSS File -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/23ae2111ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="far fa-envelope"></i><a href="mailto:12127818@cqumail.com">12127818@cqumail.com</a>
+                <i class="fas fa-phone-alt phone-icon"></i> +61431201794
+            </div>
+        </div>
+    </section>
+    <!--======Header======-->
+    <header>
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo"><a href="#">THATCARSHOP</a></div>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="browse.html">Browse</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Type Something to Search..." required>
+                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+            <h1>Welcome to ThatCarShop</h1>
+            <h2>We are a local car shop that sells both New and Used cars</h2>
+            <a class="get-started scrollto">Let's Get Started! </a>
+        </div>
+    </section><!-- End Hero -->
+    <main id="main">
+        <!--=====Cards section=====-->
+        <!--Popular New Cars-->
+        <section id="popularNew" class="popularNew">
+            <div class="container">
+                <div class=" title">
+                    <h2>Popular New Cars</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card-text-center">
+                            <img src="img/card_01.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Nissan Juke</h5>
+                                <p class="card-text">Every detail of the Nissan JUKE’s exterior is made to be admired.
+                                    Its dynamic, sports-inspired design was crafted to turn heads and catch the eye from
+                                    any angle. Wherever you travel, make a statement.</p>
+                                <a href="browse.html" data-toggle="tooltip" data-placement="bottom"
+                                    title="Browse car detail">Find
+                                    our more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card-text-center">
+                            <img src="img/card_02.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Nissan Navara</h5>
+                                <p class="card-text">Tough.Rugged.Advanced.Ready for anything, the Navara features a
+                                    minimum 1-tonne payload‡ across the dual cab range for heavy-load performance</p>
+                                <a href="browse.html" data-toggle="tooltip" data-placement="bottom"
+                                    title="Browse car detail">Find
+                                    our more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card-text-center">
+                            <img src="img/card_03.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Subaru Outback</h5>
+                                <p class="card-text">Inside, experience next level comfort and sophistication, with an
+                                    outstanding 11.6” infotainment system and sumptuous Nappa leather accented seat
+                                    trim* which makes every drive an absolute pleasure</p>
+                                <a href="browse.html" data-toggle="tooltip" data-placement="bottom"
+                                    title="Browse car detail">Find
+                                    our more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card-text-center">
+                            <img src="img/card_04.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Subaru XV</h5>
+                                <p class="card-text">The Subaru XV is loaded with brilliant technology helping you to be
+                                    connected and enjoy every drive.</p>
+                                <a href="browse.html" data-toggle="tooltip" data-placement="bottom"
+                                    title="Browse car detail">Find
+                                    our more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Highly rated Old Cars-->
+        <section id="oldCars" class="oldCars">
+            <div class="container">
+                <div class=" title">
+                    <h2>Highly Rated Used Cars</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card-text-center">
+                            <img src="img/cards_05.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Nissan 2000</h5>
+                                <p class="card-text">Nissan 2000 in good condition. Contact seller for more info</p>
+                                <a href="browse.html" data-toggle="tooltip" data-placement="bottom"
+                                    title="Browse car detail">Find
+                                    our more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card-text-center">
+                            <img src="img/cards_06.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Toyota 2001</h5>
+                                <p class="card-text">Toyota 2001 in good condition, had a few scratch. Contact seller
+                                    for more info</p>
+                                <a href="browse.html" data-toggle="tooltip" data-placement="bottom"
+                                    title="Browse car detail">Find
+                                    our more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card-text-center">
+                            <img src="img/cards_07.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Tesla model S</h5>
+                                <p class="card-text">Tesla model S in good condition. SUV. Clicl for more info</p>
+                                <a href="browse.html" data-toggle="tooltip" data-placement="bottom"
+                                    title="Browse car detail">Find
+                                    our more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card-text-center">
+                            <img src="img/cards_08.jfif" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Honda 2005</h5>
+                                <p class="card-text">Sellers is highly rated. Honda 2005 is in goood condition. Click
+                                    for more info</p>
+                                <a href="browse.html" data-toggle="tooltip" data-placement="bottom"
+                                    title="Browse car detail">Find
+                                    our more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Hoan Nguyen ----------- 12127818</p>
+        </div>
+    </footer>
+</body>
+
+</html>

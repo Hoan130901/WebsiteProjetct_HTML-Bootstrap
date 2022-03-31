@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta data -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Jquery library needs to be placed above any reference to Boostrap js -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+
+  <title>ThatCarShop</title>
+  <!-- Main CSS File -->
+  <link href="css/custom.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/23ae2111ef.js" crossorigin="anonymous"></script>
+  <!--=====JQuery to hide Form======-->
+  <script>
+    $(document).ready(function () {
+      $(".alert").ready(function () {
+        $(".alert").hide();
+      });
+      $("#submitBtn").click(function () {
+        $(".collapse").slideUp();
+        $(".titleForm").slideUp();
+        var mytxtcontent = $(".inputName").val();
+        $(".showNameAlert").html(mytxtcontent);
+        $(".alert").show();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="far fa-envelope"></i><a href="mailto:12127818@cqumail.com">12127818@cqumail.com</a>
+        <i class="fas fa-phone-alt phone-icon"></i> +61431201794
+      </div>
+    </div>
+  </section>
+  <!--======Header======-->
+  <header>
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo"><a href="#">THATCARSHOP</a></div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Type Something to Search..." required>
+          <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <!--=======Carousel section=======-->
+    <section id="carousel" class="carousel">
+      <div id="carouselSlide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselSlide" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselSlide" data-slide-to="1"></li>
+          <li data-target="#carouselSlide" data-slide-to="2"></li>
+          <li data-target="#carouselSlide" data-slide-to="3"></li>
+          <li data-target="#carouselSlide" data-slide-to="4"></li>
+          <li data-target="#carouselSlide" data-slide-to="5"></li>
+          <li data-target="#carouselSlide" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/carousel1.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>TheCarShop</h5>
+              <p>Join our Car Show at ABC Plaza this Saturday!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/carousel2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/carousel3.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/carousel4.jpg" alt="Fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/carousel5.jpg" alt="Sixth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/carousel6.jpg" alt="Seventh slide">
+          </div>
+          <div class="carousel-item">
+            <video controls autoplay muted id="vid">
+              <source src="img/carouselVid.mp4" type="video/mp4" alt="Eigth slide">
+            </video>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselSlide" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselSlide" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!--======Form======-->
+    <section class="form" id="form">
+      <div class="col-sm-12">
+        <div class="titleForm">
+          <h3>Interested about us? Sign up now to receive latest deals</h3>
+          <p>
+            <a class="btn" type="button" data-toggle="collapse" data-target="#collapseForm"
+              aria-expanded="false" aria-controls="collapseForm">
+              Sign up now!
+          </a>
+          </p>
+        </div>
+        </div>
+        <div class="formStart col-sm-12">
+          <div class="collapse" id="collapseForm">
+            <form>
+              <div class="form-group">
+                <label for="InputName">Name</label>
+                <input type="name" placeholder="Enter Your Name" id="inputName" class="inputName form-control" />
+              </div>
+              <div class="form-group">
+                <label for="InputEmail">Email address</label>
+                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <div class="form-group">
+                <label for="InputPhone">Phone</label>
+                <input type="phone" class="form-control" id="InputPhone" placeholder="Phone">
+              </div>
+              <a type="submit" class="btn" id="submitBtn">Submit</a>
+            </form>
+          </div>
+          <div class="alert alert-dark" role="alert">
+            Thank <span class="showNameAlert"></span> we will be in contact shortly!
+          </div>
+        </div>
+    </section>
+    <!------=====Listing Car Details======-->
+    <section class="carDetail">
+      <div class="container">
+        <div class=" title">
+          <h2>New Cars</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="card-text-center">
+              <img src="img/card_01.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Nissan Juke</h5>
+                <p class="card-text"> Brand: Nissan <br> Year made: 2021 <br> Odometer value: 9370km <br> Price:
+                  28376AUD
+                </p>
+                <a href="about.html#Josh" data-toggle="tooltip" data-placement="bottom"
+                  title="Yoongi Contact detail">Contact Josh McKenzie</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card-text-center">
+              <img src="img/card_02.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Nissan Navara</h5>
+                <p class="card-text"> Brand: Nissan <br> Year made: 2021 <br> Odometer value: 9370km <br> Price:
+                  43999AUD
+                </p>
+                <a href="about.html#Yoongi" data-toggle="tooltip" data-placement="bottom"
+                  title="Yoongi Contact detail">Contact Yoongi Min</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card-text-center">
+              <img src="img/card_03.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Subaru Outback</h5>
+                <p class="card-text"> Brand: Subarus <br> Year made 2021 <br> Odometer value: 9370km <br> Price:
+                  26479AUD
+                </p>
+                <a href="about.html#Yoongi" data-toggle="tooltip" data-placement="bottom"
+                  title="Josh Contact detail">Contact Josh McKenzie</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card-text-center">
+              <img src="img/card_04.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Subaru XV</h5>
+                <p class="card-text"> Brand: Subaru <br> Year made 2021 <br> Odometer value: 9349km <br> Price: 37465AUD
+                </p>
+                <a href="about.html#Lily" data-toggle="tooltip" data-placement="bottom"
+                  title="Yoongi Contact detail">Contact Lily Tran</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Old Cars-->
+    <section id="oldCars" class="oldCars">
+      <div class="container">
+        <div class=" title">
+          <h2>Used Cars</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="card-text-center">
+              <img src="img/cards_05.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Nissan 2000</h5>
+                <p class="card-text"> Brand: Toyota <br> Year made 2000 <br> Odometer value: 8370km <br> Price: 6758AUD
+                </p>
+                <a href="about.html#Christina" data-toggle="tooltip" data-placement="bottom"
+                  title="Christina Contact detail">Contact Chistina</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card-text-center">
+              <img src="img/cards_06.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Toyota 2001</h5>
+                <p class="card-text">Brand: Toyota <br> Year made: 2001 <br> Odometer Value: 8676km <br> Price: 7673AUD
+                </p>
+                <a href="about.html#Christina" data-toggle="tooltip" data-placement="bottom"
+                  title="Christina Contact detail">Contact Chistina</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card-text-center">
+              <img src="img/cards_07.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Tesla model S</h5>
+                <p class="card-text">Brand: Tesla <br> Year made: 2019 <br> Odometer Value: 8376km <br> Price:36666</p>
+                <a href="about.html#Joyce" data-toggle="tooltip" data-placement="bottom"
+                  title="Joyce Contact detail">Contact Joyce</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card-text-center">
+              <img src="img/cards_08.jfif" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Honda 2005</h5>
+                <p class="card-text">Brand: Honda<br> Year made: 2005<br> Odometer Value: 7674km <br> Price: 8767</p>
+                <a href="about.html#Aiden" data-toggle="tooltip" data-placement="bottom"
+                  title="Josh Contact detail">Contact Aiden Wang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+  <footer class="footer">
+    <div class="container">
+      <p>Hoan Nguyen ----------- 12127818</p>
+    </div>
+  </footer>
